@@ -4508,9 +4508,7 @@ td:last-child {
     line-height: 1.1;
     margin-bottom: 1rem;
 }
-.disease_background{
-    
-}
+
 .diesease-p {
     font-family: var(--font-1);
     font-size  : var(--text-md);
@@ -4539,4 +4537,11 @@ td:last-child {
 
 }
 
-
+.disease_background{
+display: block; 
+width: 100%;
+height: 280px; 
+margin: 0; 
+padding: 0; 
+object-fit: cover;
+}
