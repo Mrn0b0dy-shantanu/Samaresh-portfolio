@@ -4545,3 +4545,102 @@ margin: 0;
 padding: 0; 
 object-fit: cover;
 }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 20rem;
+}
+
+.card {
+aspect-ratio: 1 / 1;
+flex: 0 1 520px;
+  width: 450px;
+  height: 550px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.24), 0 6px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* align everything to the left now */
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-width: 260px;
+  margin-bottom: 20.5rem;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1);
+  box-shadow: 0 28px 70px rgba(0,0,0,0.34), 0 10px 28px rgba(0,0,0,0.20);
+}
+
+/* bump the image to 65% of the card height */
+.card img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin:0px;
+}
+
+/* ensure all content below the image spans full width */
+.card h3,
+.card p,
+.card .button {
+  width: 100%;
+
+}
+
+/* tweak your heading and paragraph sizes */
+.card h3 {
+    margin: 0.2rem 0 0.7rem;
+    font-size: 3.4rem;
+    font-family: "PT Sans";
+    color: #004CCF;
+    font-weight: 500;
+}
+
+.card p {
+    font-family: "PT Sans";
+    flex: 1;
+    font-size: 1.3rem;
+    color: #8f8f8f;
+    font-weight: 700;
+    margin:0px;
+     /* Pushes button to the bottom */
+}
+
+.card .button {
+    font-family: "PT Sans";
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.7rem 1.4rem;
+    background-color: #004ccf;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    align-self: flex-start;
+    font-weight: 700;
+    
+}
+
+
+.card .button:hover {
+  background: #0055a3;
+}
+.card_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px; /* top, left/right, bottom */
+  height: 100%; /* allow full height use */
+  padding: 1.5rem 1.5rem 0;
+}
+.button{
+max-width: 160px  ;
+
+}
