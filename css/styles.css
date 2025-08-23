@@ -4538,12 +4538,13 @@ td:last-child {
 }
 
 .disease_background{
-display: block; 
+display: block;
 width: 100%;
-height: 280px; 
-margin: 0; 
-padding: 0; 
-object-fit: cover;
+height: auto;
+margin: 0;
+padding: 0;
+object-fit: contain;
+
 }
 .cards {
   display: flex;
@@ -4597,10 +4598,11 @@ flex: 0 1 520px;
 /* tweak your heading and paragraph sizes */
 .card h3 {
     margin: 0.2rem 0 0.7rem;
-    font-size: 3.4rem;
+  
+    font-size: 3.4 rem;
     font-family: "PT Sans";
-    color: #004CCF;
-    font-weight: 500;
+    color: #460ec7;
+   text-shadow: 0.1px 0 0 currentColor, -0.1px 0 0 currentColor;
 }
 
 .card p {
@@ -4618,7 +4620,7 @@ flex: 0 1 520px;
     display: inline-block;
     margin: 1rem 0;
     padding: 0.7rem 1.4rem;
-    background-color: #004ccf;
+    background-color: #460ec7;
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
@@ -4630,7 +4632,7 @@ flex: 0 1 520px;
 
 
 .card .button:hover {
-  background: #0055a3;
+background: #2e0a8c;
 }
 .card_contents {
   display: flex;
